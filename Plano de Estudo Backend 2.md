@@ -6,9 +6,9 @@ Fase 1: Fundamentos (3 semanas)
 Objetivo: Entender conceitos básicos de internet, protocolos e linguagem de programação.
 
 Dia	Tópico	Atividades
-1	Como a internet funciona e iniciando em conceitos web Assistir vídeos/explicar DNS, HTTP, TCP/IP
-2	Protocolos (HTTP/HTTPS, REST, GraphQL)	Ler documentação MDN sobre HTTP, comparar REST vs GraphQL
-3	Escolha uma linguagem e entenda como funciona (ex: JavaScript/Node.js, Python, Java, Go)	Instalar ambiente e escrever "Hello World"
+1	Como a internet funciona e iniciando em conceitos web Assistir vídeos/explicar DNS, HTTP, TCP/IP ✅
+2	Protocolos (HTTP/HTTPS ✅, REST, GraphQL)	Ler documentação MDN sobre HTTP, comparar REST vs GraphQL
+3	Escolha uma linguagem e entenda como funciona (ex: JavaScript/Node.js, Python, Java, Go)	Instalar ambiente e escrever "Hello World" ✅
 4-7	Sintaxe básica da linguagem (variáveis, loops, funções)	Praticar com exercícios (ex: HackerRank, Codewars)
 8-14	Estruturas de dados (arrays, objetos, hash maps)	Implementar estruturas manualmente (ex: fila, pilha)
 15-18	Algoritmos (busca, ordenação, complexidade Big-O)	Resolver 1-2 problemas por dia (ex: Binary Search)
