@@ -1,0 +1,45 @@
+1️⃣ Projeto: Plataforma de Análise de Dados em Tempo Real (FastAPI - Python)
+Objetivo: Sistema que coleta, processa e exibe métricas em tempo real (ex: tweets, preços de criptomoedas, sensores IoT).
+
+Tópicos abordados (FastAPI + Python):
+✅ Fundamentos: HTTP, REST, API Design, Python
+✅ Banco de Dados: PostgreSQL (relacional), Redis (cache)
+✅ Autenticação: OAuth2 + JWT
+✅ Processamento Assíncrono: Celery + RabbitMQ
+✅ APIs Reativas: WebSockets (dados em tempo real)
+✅ Testes: Pytest, TestClient
+✅ Deploy: Docker, Kubernetes (escalabilidade)
+✅ Monitoramento: Prometheus + Grafana
+✅ Segurança: CORS, Rate Limiting, SQL Injection
+
+Inovação:
+
+Uso de WebSockets para atualização em tempo real.
+
+Machine Learning leve (análise de sentimentos com transformers).
+
+________________________________________________________________________
+
+1️⃣ FastAPI (Python): Plataforma de Análise de Dados em Tempo Real
+    Diferencial: Machine Learning + WebSockets
+
+    Tech Stack: PostgreSQL, Redis, Celery, Prometheus
+
+    Cobre: Async IO, APIs reativas, monitoramento
+
+________________________________________________________________________
+
+📌 Checklist por Projeto
+(✅ = Coberto | 🔄 = Parcialmente | ❌ = Não aplicável)
+
+1️⃣ FastAPI: Análise de Dados em Tempo Real
+    Tópico	Cobertura	Exemplo no Projeto
+    HTTP/REST	✅	API para ingestão de dados
+    WebSockets	✅	Dashboard em tempo real
+    PostgreSQL	✅	Armazenamento de métricas históricas
+    Redis	✅	Cache de consultas frequentes
+    Autenticação (OAuth2)	✅	Login com Google/GitHub
+    Processamento Assíncrono	✅	Celery + RabbitMQ para tarefas pesadas
+    Docker/Kubernetes	✅	Deploy escalável
+    Prometheus/Grafana	✅	Monitoramento de performance
+    Segurança (CORS, etc.)	✅	Rate limiting e SQL injection prevention

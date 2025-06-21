@@ -1,0 +1,30 @@
+📌 Fase 1: Fundamentos (1-2 meses)
+Antes de mergulhar em Backend, é essencial dominar conceitos básicos.
+
+1.1 Internet & Protocolos 
+    Como a internet funciona (HTTP/HTTPS, DNS, TCP/IP) ✅
+
+    Métodos HTTP (GET, POST, PUT, DELETE, PATCH) ✅
+
+    RESTful APIs vs GraphQL 
+
+    WebSockets e comunicação em tempo real
+
+🔹 Recursos:
+
+Livro: "HTTP: The Definitive Guide" (David Gourley)
+
+Vídeo: How the Internet Works (YouTube)
+
+1.2 Linha de Comando & Git
+    Comandos básicos do terminal (Linux/Mac/Windows)
+
+    Git e GitHub (commits, branches, merge, rebase) ✅
+
+    Git Flow e colaboração em equipe
+
+🔹 Recursos:
+
+Curso: Git e GitHub para Iniciantes (Udemy)
+
+Prática: Contribuir em projetos open-source

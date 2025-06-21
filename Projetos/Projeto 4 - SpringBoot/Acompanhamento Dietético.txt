@@ -1,0 +1,204 @@
+Levantamento de Requisitos & Explicação Geral do Projeto
+
+📌 Visão Geral do Projeto
+    O projeto consiste em uma plataforma Web + Mobile desenvolvida em Spring Boot (Kotlin) para acompanhamento dietético, onde:
+    ✅ Usuários registram alimentos consumidos e o sistema calcula automaticamente as calorias.
+    ✅ Upload de PDFs permite importar tabelas nutricionais ou cardápios.
+    ✅ Sistema de competição motiva os usuários a seguirem a dieta, com pontuação baseada em adesão ou desvios.
+    ✅ Posts com imagens e comentários permitem interação social e compartilhamento de refeições.
+
+📋 Requisitos Funcionais
+1. Módulo de Usuários (Auth & Profile)
+    RF01: Cadastro e login (JWT).
+
+    RF02: Perfil do usuário (metas calóricas, histórico, pontos).
+
+    RF03: Edição de preferências dietéticas.
+
+2. Módulo de Alimentos & Dieta
+    RF04: Cadastro manual de alimentos (nome, calorias, categoria).
+
+    RF05: Busca de alimentos no banco de dados.
+
+    RF06: Registro diário de consumo (quantidade, horário, refeição).
+
+    RF07: Cálculo automático de calorias totais diárias.
+
+    RF08: Upload de PDF para importação de alimentos (parser com Apache PDFBox).
+
+3. Módulo de Competição
+    RF09: Criação de competições (período, participantes).
+
+    RF10: Sistema de pontuação:
+
++Pontos por alimentos saudáveis e adesão à dieta.
+
+-Pontos por alimentos "proibidos" ou excessos.
+
+    RF11: Ranking em tempo real.
+
+    RF12: Feed de posts (imagens + comentários vinculados a alimentos).
+
+4. Módulo Social (Posts & Interação)
+
+    RF13: Publicação de fotos de refeições com descrição.
+
+    RF14: Comentários e curtidas em posts.
+
+    RF15: Vinculação de alimentos registrados aos posts.
+
+5. Relatórios & Dashboard
+    RF16: Gráficos de evolução (calorias, pontos, adesão à dieta).
+
+    RF17: Exportação de relatórios em PDF.
+
+⚙️ Requisitos Não-Funcionais
+1. Desempenho & Escalabilidade
+    RNF01: Tempo de resposta da API < 500ms.
+
+    RNF02: Suporte a pelo menos 1.000 usuários concorrentes.
+
+2. Segurança
+    RNF03: Autenticação via JWT.
+
+    RNF04: Criptografia de senhas (BCrypt).
+
+    RNF05: Validação de uploads (apenas PDFs e imagens).
+
+3. Usabilidade
+    RNF06: Interface intuitiva (mobile-friendly).
+
+    RNF07: Documentação da API (Swagger/OpenAPI).
+
+4. Implantação
+    RNF08: Dockerização do backend.
+
+    RNF09: CI/CD automatizado (GitHub Actions).
+
+🔍 Explicação Detalhada do Projeto
+💡 Objetivo Principal
+    Criar um sistema que automatize o acompanhamento nutricional e adicione gamificação (competição + pontuação) para motivar os usuários a manterem a dieta.
+
+
+🎯 Público-Alvo
+    Pessoas em dietas específicas (emagrecimento, ganho de massa, restrições).
+
+    Grupos de amigos ou nutricionistas que queiram criar desafios.
+
+
+🔧 Funcionamento Básico
+    Usuário se cadastra e define suas metas calóricas.
+
+    Registra alimentos consumidos (manual ou por PDF).
+
+    O sistema calcula calorias e pontos (positivos/negativos).
+
+    Competições criadas por usuários ou nutricionistas.
+
+    Ranking atualizado diariamente com base na adesão à dieta.
+
+    Feed social permite compartilhar refeições e interagir.
+
+
+🛠️ Tecnologias-Chave (Recapitulação)
+    Módulo	Tecnologias
+    Backend	Spring Boot 3, Kotlin, JPA/Hibernate
+    Banco	PostgreSQL (relacional)
+    Auth	JWT + Spring Security
+    Uploads	AWS S3 (ou armazenamento local)
+    PDF	Apache PDFBox (parser) + OpenPDF (geração)
+    API Docs	SpringDoc OpenAPI (Swagger)
+    Mobile	Android Nativo (Kotlin) ou Flutter
+
+🚀 Próximos Passos (Roadmap)
+    Definir modelo de dados completo (entidades e relacionamentos).
+
+    Prototipar endpoints da API (Swagger).
+
+    Implementar autenticação JWT.
+
+    Criar sistema de upload de PDF/imagems.
+
+    Desenvolver lógica de pontuação.
+
+    Construir dashboard e ranking.
+
+________________________________________________________________________
+
+Principais Tecnologias para Projeto Spring Boot + Kotlin
+    Para seu projeto de acompanhamento dietético com sistema de competição, recomendo o seguinte stack tecnológico:
+
+Core do Projeto
+    Spring Boot 3.x: Framework principal
+
+    Kotlin 1.9+: Linguagem principal
+
+    Gradle (Kotlin DSL): Gerenciamento de dependências
+
+Persistência de Dados
+    Spring Data JPA: Para operações com banco relacional
+
+    Hibernate: ORM principal
+
+    PostgreSQL: Banco de dados relacional recomendado
+
+    Ou MySQL se preferir
+
+    Flyway ou Liquibase: Migração de banco de dados
+
+Processamento de PDF
+    Apache PDFBox: Biblioteca robusta para extração de texto de PDFs
+
+    OpenPDF: Para geração de PDFs (se necessário)
+
+Upload e Armazenamento de Arquivos
+    Spring Content: Para gerenciamento de conteúdo binário
+
+    AWS S3 SDK (ou Google Cloud Storage): Para armazenamento em nuvem
+
+    Alternativa local: Spring Resource para sistema de arquivos
+
+Autenticação e Segurança
+    Spring Security: Para autenticação e autorização
+
+    JWT (JSON Web Tokens): Para autenticação stateless
+
+    OAuth2 Resource Server: Se precisar integrar com provedores externos
+
+API e Comunicação
+    Spring Web MVC: Para construção da API REST
+
+    Spring Validation: Para validação de dados
+
+    Spring Doc OpenAPI: Para documentação da API (Swagger)
+
+    Jackson Module Kotlin: Para serialização JSON
+
+Processamento Assíncrono
+    Kotlin Coroutines: Para programação assíncrona
+
+    Spring WebFlux (opcional): Se precisar de reatividade
+
+Testes
+    JUnit 5: Framework de testes
+
+    MockK: Para mocking em Kotlin
+
+    Testcontainers: Para testes de integração com banco real
+
+    Spring Boot Test: Para testes de integração
+
+Monitoramento e Operação
+    Spring Boot Actuator: Para monitoramento
+
+    Micrometer + Prometheus: Para métricas
+
+    Logback: Para logging
+
+Cache
+    Caffeine: Cache em memória
+
+    Spring Cache Abstraction: Para integração
+
+Mensageria (opcional para notificações)
+    Spring Kafka ou RabbitMQ: Se precisar de comunicação assíncrona entre serviços
